@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+    printf("Enter a numerator 'a'\n");
+    scanf("%d", &a);
+    printf("Enter a denominator 'b'\n");
+    scanf("%d", &b);
+    c = a/b;
+    printf("Fraction of %d and %d is %d\n",a, b, c );
+
+    return 0;
+}
