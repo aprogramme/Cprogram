@@ -1,0 +1,57 @@
+
+# Introduction
+
+In this program we are going to find out addition,  subtraction, product, divide and modulus of two number in 
+C++.
+
+
+## For example
+
+ Let first number is 'a = 4' and second is 'b = 6'. 
+ Addition = a + b = 10
+
+Subtraction = a - b =  -2
+
+Multiply = a * b = 24
+
+Divide = a / b = 0
+
+Modulus = a % b = 4
+
+
+
+
+## Program
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x, y;
+    int sum, difference,product, division;
+    float qoutient;
+    
+    cout<<"Enter first number\n";
+    cin>> x;
+    cout<<"Enter second number\n";
+    cin>> y;
+    
+    sum = x + y;
+    difference = x - y;
+    product = x * y;
+    division = x / y;
+    qoutient = x % y;
+    
+    cout<<"\nsum ="<<sum;
+    cout<<"\nDifference ="<<difference;
+    cout<<"\nProduct ="<<product;
+    cout<<"\nDivision ="<<division;
+    cout<<"\nQuotient ="<<qoutient;
+
+    return 0;
+}
+
+
+
