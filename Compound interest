@@ -1,0 +1,60 @@
+
+# Compound Interest
+# Introduction
+Compound interest is the interest on a loan or deposit that accrues on both the initial principal and the accumulated interest from previous periods.
+
+# Compound Interest Formula
+ CI = P(1 + R/100)^T
+
+ where, 
+
+ P = is the principle amount
+
+ T = is the time and
+
+ R = is the rate
+
+
+# Logic to calculate compound interest
+
+Step by step descriptive logic to calculate compound interest.
+
+1. Input principle amount. Store it in some variable say principle.
+
+2. Input time in some variable say time.
+
+3. Input rate in some variable say rate.
+
+4. Calculate compound interest using formula, CI = principle * pow((1 + rate / 100), time).
+
+5. Finally, print the resultant value of CI.
+
+
+
+# Program to find CI
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float principle, rate, time, CI;
+
+    /* Input principle, time and rate */
+    printf("Enter principle (amount): ");
+    scanf("%f", &principle);
+
+    printf("Enter time: ");
+    scanf("%f", &time);
+
+    printf("Enter rate: ");
+    scanf("%f", &rate);
+
+    /* Calculate compound interest */
+    CI = principle* (pow((1 + rate / 100), time));
+
+    /* Print the resultant CI */
+    printf("Compound Interest = %f", CI);
+
+    return 0;
+}

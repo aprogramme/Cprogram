@@ -1,0 +1,62 @@
+
+# Simple Interest
+# Introduction
+In this program we are going to calculate simple Interest.
+
+
+# Simple Interest Formula
+ SI = (P * T * R) / 100
+
+ where, 
+
+ P = is the principle amount
+
+ T = is the time and
+
+ R = is the rate
+
+
+# Logic to calculate simple interest
+
+Step by step descriptive logic to calculate simple interest.
+
+1. Input principle amount in some variable say principle.
+
+2. Input time in some variable say time.
+
+3. Input rate in some variable say rate.
+
+4. Find simple interest using formula SI = (principle * time * rate) / 100.
+
+5. Finally, print the resultant value of SI.
+
+
+
+
+# Program to find SI
+
+#include <stdio.h>
+
+int main()
+{
+    float principle, time, rate, SI;
+
+    /* Input principle, rate and time */
+    printf("Enter principle (amount): ");
+    scanf("%f", &principle);
+
+    printf("Enter time: ");
+    scanf("%f", &time);
+
+    printf("Enter rate: ");
+    scanf("%f", &rate);
+
+    /* Calculate simple interest */
+    SI = (principle * time * rate) / 100;
+
+    /* Print the resultant value of SI */
+    printf("Simple Interest = %f", SI);
+
+    return 0;
+}
+
