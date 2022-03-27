@@ -1,0 +1,52 @@
+
+# Swap Function
+# Introduction
+Swap function is used to swap two number. By using this function, we don't need any third variable to swap two number.
+
+# For example
+  Let's two number be a and b
+
+  Before swaping, 
+  
+  a = x and b = y
+
+  After swaping, 
+
+  a = y  and b = x
+
+# Program
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Program to swap two number without using third variable"<<endl;
+    cout<<endl;
+    int a, b;
+    
+    cout<<"Enter the first number:"<<endl;
+    cin>>a;
+    
+    cout<<"Enter the second number:"<<endl;
+    cin>>b;
+    
+    cout<<"Value before swaping"<<endl;
+    cout<<"First number = "<<a<<endl;
+    cout<<"Second number = "<<b<<endl;
+    cout<<endl;
+    
+    // Logic for swaping two numbers
+    
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    
+    cout<<"Value After Swaping"<<endl;
+    cout<<"First number = "<<a<<endl;
+    cout<<"Second number = "<<b<<endl;
+    
+    
+    return 0;
+}
