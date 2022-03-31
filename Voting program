@@ -1,0 +1,33 @@
+
+# Introduction
+
+In this program we are going to find the person is eligible for voting or not.
+
+# Example
+
+If age of person is less than 18 then he/she will not be eligible for voting.
+
+And if age is 18 or above then he/she will be able for voting.
+# Program
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int age;
+    printf("Enter your age\n");
+    scanf("%d", &age);
+    printf("You have entered %d as your age:\n", age);
+    if(age>=18)
+    {
+        printf("Your age is greater than 18 so you are eligible for voting");
+    }
+    else 
+    {
+        printf("Your age is less than 18 so you are not eligible for voting");
+    }
+
+    return 0;
+}
+
