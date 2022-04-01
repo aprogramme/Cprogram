@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    printf("Enter first number\n");
+    scanf("%d", &a);
+    
+    printf("Enter second number\n");
+    scanf("%d", &b);
+    
+    if(a>b)
+    {
+        printf("First number is greater\nThat is %d", a);
+    }
+    else
+    {
+        printf("second number is greater\nThat is %d", b);
+    }
+
+    return 0;
+}
