@@ -1,0 +1,41 @@
+
+# Introduction
+ In this program we are going to find that given year is leap year or not.
+
+# Condition
+
+For leap year
+
+When year divisible by both 400 and 4 must give 0 remainder. And when divisible by 100 must not give remainder 0, then the year said to be leap year.
+
+Otherwise year is not leap year.
+
+# Example
+
+Year = 2012 is divisible by both 400 and 4 and give remainder 0 and when divisible
+by 100, remainder is not 0. whereas,
+
+year = 2014 is not leap year because it's remainder is not 0 when divisible by 400 and 4 both.
+# Program
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int y;
+    printf("Enter any year\n");
+    scanf("%d", &y);
+    
+    if(y%400==0 || y%4==0 && y%100!=0)
+    {
+        printf("Year is leap year");
+    }
+    else
+    {
+        printf("Year is not leap year");
+    }
+    
+
+    return 0;
+}
