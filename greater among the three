@@ -1,0 +1,64 @@
+
+# Introduction
+ In this program we are going to find the greater number among the three numbers.
+
+
+
+# Example
+
+Let's say 
+
+first number = 7
+
+second number = 6
+
+third number = 9
+
+then, among the three third number is greater i.e., 9.
+# Program
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int a, b, c;
+    printf("Enter first number\n");
+    scanf("%d", &a);
+    
+    printf("Enter second number\n");
+    scanf("%d", &b);
+    
+    printf("Enter third number\n");
+    scanf("%d", &c);
+    
+    
+    if(a>b)
+    {
+        if(a>c)
+        {
+            printf("%d is greater among the three", a);
+        }
+        else
+        {
+            printf("%d is greater among the three", c);
+        }
+    }
+    
+    else if(b>a)
+    {
+        if(b>c)
+        {
+            printf("%d is greater among the three", b);
+        }
+        else
+        {
+            printf("%d is greater among the three", c);
+        }
+    }
+    
+    
+    
+
+    return 0;
+}
