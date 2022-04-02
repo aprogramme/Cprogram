@@ -1,0 +1,60 @@
+
+# Introduction
+ In this program we are going to entered the score of 4 subject by user and give their result according to their result.
+
+
+
+# Example
+
+Let's say total score is 400.
+
+If score is greater than 350, then the student is passed by first division.
+
+if score is greater than 200 and less than 350 then he got second division.
+
+if score is between 200 and 150 the third division and
+
+if score is less than 150 then he is fail.
+# Program
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int sub1, sub2, sub3, sub4, total;
+    printf("Enter score of sub1\n");
+    scanf("%d", &sub1);
+    
+    printf("Enter score of sub2\n");
+    scanf("%d", &sub2);
+    
+    printf("Enter score of sub3\n");
+    scanf("%d", &sub3);
+    
+    printf("Enter score of sub4\n");
+    scanf("%d", &sub4);
+    
+    total = sub1 + sub2 + sub3 + sub4;
+    printf("Total score is %d\n", total);
+    
+    if(total>350)
+    {
+        printf("You got first division");
+    }
+    else if(total>200)
+    {
+        printf("You got second division");
+    }
+    else if(total>150)
+    {
+        printf("You got third division");
+    }
+    else
+    {
+        printf("You are fail");
+    }
+    
+
+    return 0;
+}
