@@ -1,0 +1,47 @@
+
+# Introduction
+# Square and cube of first natural number.
+
+In this program we are  going to find out the square and cube of natural number entered by users.
+
+
+
+
+# Example
+
+Let's take first 5 natural number.
+
+1.  sq = 1, cube = 1
+
+2. sq= 4,  cube = 8
+
+3. sq = 9, cube = 27
+
+4. sq = 16, cube = 64
+
+5. sq = 25, cube = 125
+# Program
+
+We are going to print above result result by doing programming.
+
+#include <stdio.h>
+
+
+int main()
+
+{
+    
+    int i,n;
+    printf("Enter the value of n\n");
+    scanf("%d", &n);
+    printf("No. \tSquare \tCube\n");
+    for(i = 1; i <= n; i++)
+    {
+        
+        printf("%d \t%d \t%d \t\n", i, i*i, i*i*i);
+    }
+
+    return 0;
+}
+
+
