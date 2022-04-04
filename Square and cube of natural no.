@@ -22,7 +22,7 @@ Let's take first 5 natural number.
 5. sq = 25, cube = 125
 # Program
 
-We are going to print above result result by doing programming.
+We are going to print above result by doing programming.
 
 #include <stdio.h>
 
