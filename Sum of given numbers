@@ -1,0 +1,43 @@
+
+# Introduction
+In this program we are going to take numbers from users and add all given numbers using while loop.
+
+# Example
+
+Let's take any numbers 
+
+say, 8453
+
+Now add all given numbers,
+
+8 + 4 + 5 + 3
+
+= 20
+
+
+# Program
+
+We are going to print above result by doing programming.
+
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int i, n, sum = 0,  remainder;
+    printf("Enter the number to add\n");
+    scanf("%d", &n);
+     
+    i = n;
+    while(i != 0)
+    {
+        remainder = i % 10;
+        sum = sum + remainder;
+        i = i / 10;
+    }
+    printf("The sum of %d is %d", n, sum);
+
+    return 0;
+}
+
