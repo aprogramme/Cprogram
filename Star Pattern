@@ -1,3 +1,21 @@
+##INTRODUCTION
+
+In this program we are going to print star pattern by taking numbers from users, means it will print star pattern by users choice.
+
+
+##EXAMPLE
+
+Let's say we want 6 rows of stars
+then, output will be,
+*
+**
+***
+****
+*****
+******
+
+
+##PROGRAM
 
 #include <stdio.h>
 void starPattern(int rows)
