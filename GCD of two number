@@ -1,0 +1,51 @@
+
+# Introduction
+In this program we are goint to take two numbers from users to print GCD value.
+
+# Example
+
+let's first number be 4 and second be 6
+
+Factor of 4 = 1, 2, 4
+
+Factor of 6 = 1, 2, 3, 6
+
+common factor = 1 and 2
+
+Highest common factor = 2
+
+So, 
+
+GCD of 4 and 6 is 2.
+
+
+
+
+
+
+
+# Program
+
+We are going to print above result by doing programming.
+
+#include <stdio.h>
+
+int main()
+
+{
+    
+    int a, b, H;
+    printf("Enter two numbers\n");
+    scanf("%d %d", &a, &b);
+    for(H = a<b? a : b; H>= 1; H--)
+    {
+        if(a % H == 0 && b % H == 0)
+        break;
+    }
+    
+    printf("The GCD is %d", H);
+    
+
+    return 0;
+}
+
